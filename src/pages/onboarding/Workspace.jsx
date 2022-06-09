@@ -1,10 +1,12 @@
 import React from "react";
 import FormInput from "../../components/FormInput";
+import { useNavigate } from "react-router-dom";
 
-const WorkSpaceInfo = ({ setCurrentPage }) => {
+const WorkSpace = () => {
+  const navigate = useNavigate();
   const submitForm = (e) => {
     e.preventDefault();
-    setCurrentPage((prev) => prev + 1);
+    navigate("/onboarding/plans");
   };
   return (
     <>
@@ -33,4 +35,4 @@ const WorkSpaceInfo = ({ setCurrentPage }) => {
   );
 };
 
-export default WorkSpaceInfo;
+export default WorkSpace;

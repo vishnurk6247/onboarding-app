@@ -1,9 +1,12 @@
 import React from "react";
 import PlanCard from "../../components/PlanCard";
+import { useNavigate } from "react-router-dom";
 
-const PlanInfo = ({ setCurrentPage }) => {
+const Plans = () => {
+  const navigate = useNavigate();
+
   const submitPlan = () => {
-    setCurrentPage((prev) => prev + 1);
+    navigate("/onboarding/completed");
   };
   return (
     <>
@@ -26,4 +29,4 @@ const PlanInfo = ({ setCurrentPage }) => {
   );
 };
 
-export default PlanInfo;
+export default Plans;
