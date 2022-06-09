@@ -2,6 +2,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     gap: 20px 80px;
+    overflow: hidden;
 }
 
 .steps-progress {
@@ -33,4 +34,12 @@
 
 .current::after {
     background: linear-gradient(to right, var(--primary-color) 50%, lightgray 50%) !important;
+}
+
+.plan-card {
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
 }

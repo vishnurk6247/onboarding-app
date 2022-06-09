@@ -2,3 +2,8 @@
     height: 100%;
     width: 500px;
 }
+
+.plan-cards-container {
+    display: flex;
+    justify-content: space-between;
+}
