@@ -1,0 +1,36 @@
+.steps-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px 80px;
+}
+
+.steps-progress {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+
+.steps-progress:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 51px;
+    height: 2px;
+    width: 80px;
+    background: lightgrey;
+}
+
+
+.current,
+.active,
+.active::after {
+    color: #fff;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color);
+}
+
+.current::after {
+    background: linear-gradient(to right, var(--primary-color) 50%, lightgray 50%) !important;
+}
