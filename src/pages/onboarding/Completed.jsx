@@ -3,12 +3,13 @@ import React from "react";
 const Completed = () => {
   return (
     <>
-      <h2 className="text-center">Congratulations, Eren!</h2>
-      <p className="text-center">
+      <h2 className="page-title">Congratulations, Eren!</h2>
+      <p className="page-sub">
         You have completed onboarding, you can start using Eden!
       </p>
-
-      <button>Launch Eden</button>
+      <div className="onboarding-elements-container">
+        <button>Launch Eden</button>
+      </div>
     </>
   );
 };

@@ -10,11 +10,9 @@ const WorkSpace = () => {
   };
   return (
     <>
-      <h2 className="text-center">Let's set up a home for all your work</h2>
-      <p className="text-center">
-        You can always create another workspace later.
-      </p>
-      <form>
+      <h2 className="page-title">Let's set up a home for all your work</h2>
+      <p className="page-sub">You can always create another workspace later.</p>
+      <form className="onboarding-elements-container">
         <FormInput
           type="text"
           name="workspaceName"

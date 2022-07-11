@@ -25,8 +25,8 @@ const Onboarding = () => {
 
   return (
     <>
-      <div className="onboarding-container margin-auto">
-        <h1 className="text-center">Eden</h1>
+      <div className="onboarding-container">
+        <h1 className="app-title">Eden</h1>
         <Steps length={4} current={currentPage} />
         <Routes path="/onboarding">
           <Route path="profile" element={<Profile />} />
