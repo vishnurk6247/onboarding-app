@@ -10,9 +10,9 @@ const Profile = () => {
   };
   return (
     <>
-      <h2 className="text-center">Welcome! First things first...</h2>
-      <p className="text-center">You can always change them later.</p>
-      <form>
+      <h2 className="page-title">Welcome! First things first...</h2>
+      <p className="page-sub">You can always change them later.</p>
+      <form className="onboarding-elements-container">
         <FormInput
           type="text"
           name="fullName"
