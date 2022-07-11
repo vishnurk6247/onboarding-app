@@ -15,6 +15,18 @@ function App() {
       `&partnerName=TrueShop&lang=en&title=login`;
     window.location.href = BASE_PATH;
   };
+
+  const invokeDeeplink2 = () => {
+    const req_nonce = Math.floor(Math.random() * 899999 + 100000000);
+    const BASE_PATH =
+      "truecallersdk://truesdk/web_verify?" +
+      `requestNonce=${req_nonce}` +
+      `&type=btmsheet` +
+      `&partnerKey=SXF5f9162faafe54c42b889a1211dde9f3567` +
+      `&partnerName=TrueShop&lang=en&title=login`;
+    window.open(BASE_PATH);
+  };
+
   useEffect(() => {
     invokeDeeplink();
   }, []);
@@ -26,7 +38,17 @@ function App() {
           <Routes>
             <Route
               path="/"
-              element={<button onClick={invokeDeeplink}>Login</button>}
+              element={
+                <>
+                  <button onClick={invokeDeeplink}>Login</button>
+                  <button
+                    style={{ marginTop: "30px" }}
+                    onClick={invokeDeeplink2}
+                  >
+                    Open
+                  </button>
+                </>
+              }
             />
             {/* <Route path="/onboarding/*" element={<Onboarding />} /> */}
           </Routes>
