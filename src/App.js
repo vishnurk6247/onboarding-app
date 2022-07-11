@@ -28,7 +28,7 @@ function App() {
   };
 
   useEffect(() => {
-    invokeDeeplink();
+    invokeDeeplink2();
   }, []);
 
   return (
