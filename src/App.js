@@ -28,16 +28,16 @@ function App() {
   };
 
   useEffect(() => {
-    // const req_nonce = Math.floor(Math.random() * 899999 + 100000000);
-    // const BASE_PATH =
-    //   "truecallersdk://truesdk/web_verify?" +
-    //   `requestNonce=${req_nonce}` +
-    //   `&type=btmsheet` +
-    //   `&partnerKey=SXF5f9162faafe54c42b889a1211dde9f3567` +
-    //   `&partnerName=TrueShop&lang=en&title=login`;
-    // let a = document.createElement("a");
-    // a.setAttribute("href", BASE_PATH);
-    // a.click();
+    const req_nonce = Math.floor(Math.random() * 899999 + 100000000);
+    const BASE_PATH =
+      "truecallersdk://truesdk/web_verify?" +
+      `requestNonce=${req_nonce}` +
+      `&type=btmsheet` +
+      `&partnerKey=SXF5f9162faafe54c42b889a1211dde9f3567` +
+      `&partnerName=TrueShop&lang=en&title=login`;
+    let a = document.createElement("a");
+    a.setAttribute("href", BASE_PATH);
+    a.click();
     // invokeDeeplink2();
   }, []);
 
