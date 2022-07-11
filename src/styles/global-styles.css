@@ -63,9 +63,13 @@ form .form-element:not(:last-child) {
 }
 
 .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
-    max-width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 .d-flex {
